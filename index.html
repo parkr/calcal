@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Eat Yo'self Silly</title>
+    <link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+    <style type="text/css">
+    input, select {
+        width: 100%;
+        padding: 24px;
+    }
+    input[type="submit"] {
+        background-color: black;
+        color: white;
+    }
+    </style>
+    <script src="calcal.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <h2>How many calories you supposed to be eatin?</h2>
+    <form action="/" method="post" accept-charset="utf-8">
+        <p>
+            <label for="sex">You describe your body as that of a:</label>
+            <select name="sex">
+                <option value="man">Man</option>
+                <option value="woman">Woman</option>
+            </select>
+        </p>
+        <p><input name="weight" placeholder="Well, what's your weight? In pounds."></p>
+        <p><input name="height" placeholder="And your height? Inches, fool."></p>
+        <p><input name="age" placeholder="How old are you? Years, duh!"></p>
+        <p>
+            <label for="activity">How active are you?</label>
+            <select name="activity">
+                <option value="sedentary">Sedentary – little or no exercise</option>
+                <option value="light">Lightly Active - light exercise 1-3 days/wk</option>
+                <option value="moderate">Moderately Active - moderate exercise 3-5 days/wk</option>
+                <option value="very">Very Active - hard exercise 6-7 days/wk</option>
+                <option value="extra">Extra Activy - very hard exercise, physical job or 2x training</option>
+            </select>
+        </p>
+        <p><input type="submit" value="SUBMIT" id="submit"></p>
+    </form>
+    <h1 id="result">Result</h1>
+</body>
+</html>
